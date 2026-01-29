@@ -1,4 +1,4 @@
-# repo_estudo01
+# pyrhon_estudos01
 
 # 🐍 Python: Jornada do Intermediário à Orientação a Objetos
 
