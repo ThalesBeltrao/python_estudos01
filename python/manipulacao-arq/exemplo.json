@@ -1,0 +1,7 @@
+[{"name": "thales", "lastName": "willian", "age": 30},
+  {"name": "douglas", "lastName": "roberto", "age":25},
+  {"name": "julia", "lastName": "silva", "age":23, "addresses": [{"line1": "av.brasil"},{"line2": "av. amapá"}]}
+
+
+]
+
