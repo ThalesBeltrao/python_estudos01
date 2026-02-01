@@ -5,10 +5,6 @@ from models.jogador import Jogador
 jg_router = APIRouter()
 
 
-@jg_router.get("/")
-async def inicio(): # assicrono para nao gerar fila
-    return "Seja Bem Vindo"
-
 
 
 @jg_router.get("/jogadores")
