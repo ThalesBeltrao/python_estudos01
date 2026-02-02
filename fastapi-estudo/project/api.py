@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import uvicorn
-from routes.router_jg import jg_router
+from routes.routerjg import jg_router
 
 app = FastAPI()
 
