@@ -9,4 +9,3 @@ def jogadorEntidade(item) -> dict:
 def listaJogadoresEntidade(entity) -> list:
     return [jogadorEntidade(item) for item in entity]
 
-
