@@ -93,7 +93,7 @@ def deletar(id_obj: ObjectId=Depends(validar_ip)):
     )
     if not deletar:
         raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND
+            status_code=status.HTTP_404_NOT_FOUND,
             detail="Jogador Inexistente"
         )
     return None
