@@ -3,7 +3,7 @@
 # Validação de ID verificação se a string recebida é um ObjectId valido 
 
 
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Depends
 from config.database import col
 from schemas.jg_entidade import jogadorEntidade, listaJogadoresEntidade
 from models.jogador import Jogador
@@ -12,7 +12,7 @@ from bson.errors import InvalidId
 
 
 
-jg_router = APIRouter(prefix="jogadores", tags=["Jogadores"])
+jg_router = APIRouter(prefix="/jogadores", tags=["Jogadores"])
 
 
 # Validação de  Id 
