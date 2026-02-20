@@ -14,7 +14,7 @@ from fastapi import FastAPI, HTTPException
 # Ordenação
 # Parametros opcionais
 
-# ge-jogador/1?id=1
+# get-jogador/1?id=1
 
 
 

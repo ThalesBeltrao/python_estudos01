@@ -7,7 +7,8 @@ from fastapi import FastAPI, HTTPException
 # O que define ser um path parameter é a chave {}
 
 app = FastAPI()
-
+# Como se fosse um banco de dados orientado a documentos
+# Mongodb por exemplo
 dados = {
         1: {"nome": "thales".capitalize(),
             "idade":34,
