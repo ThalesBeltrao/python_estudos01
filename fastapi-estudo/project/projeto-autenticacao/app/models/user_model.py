@@ -19,7 +19,7 @@ class User(Document):
     def __str__(self) -> str:
         return self.email
     
-    def __hash__(self) -> str:
+    def __hash__(self) -> int:
         return hash(self.email)
     
     def __eq__ (self, other: object) -> bool:
@@ -32,5 +32,5 @@ class User(Document):
         return self.id.generation_time
     
     @classmethod
-    async def by_email(self, email: str) -> "User":
-        return await self.find_one(self.email == email)
+    async def by_email(cls, email: str) -> "User":
+        return await cls.find_one(cls.email == email)

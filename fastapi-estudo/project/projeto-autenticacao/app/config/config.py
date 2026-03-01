@@ -5,8 +5,8 @@ from pathlib import Path
 
 # 1. Localiza o diretório onde este arquivo (config.py) está
 # 2. Define o caminho para o .env na mesma pasta
-current_dir = Path(__file__).parent
-env_path = current_dir / ".env"
+current_dir = Path(__file__).parent # caminho do arquivo config.py
+env_path = current_dir / ".env" # evita problemas com caminhos relativos
 
 class Settings(BaseSettings):
     # API Config
@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     # 7 dias em minutos = 10080
     REFRESH_TOKEN_EXPIRE_MINUTES: float = 10080.0
     
+    # Cors
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
 
     # Database
