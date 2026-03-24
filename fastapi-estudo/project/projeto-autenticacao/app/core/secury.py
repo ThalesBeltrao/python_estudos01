@@ -6,7 +6,7 @@ password_context = CryptContext(
 
 )
 
-#criptogradando 
+#criptografando 
 def get_password(password: str) -> str:
     return password_context.hash(password)
 

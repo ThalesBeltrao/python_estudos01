@@ -8,8 +8,10 @@ from pathlib import Path
 current_dir = Path(__file__).parent # caminho do arquivo config.py
 env_path = current_dir / ".env" # evita problemas com caminhos relativos
 
-class Settings(BaseSettings):
-    # API Config
+class Settings(BaseSettings): 
+    # API Config 
+
+    # definições de prefixos como /api/v1/login 
     API_V1_STR: str = "/api/v1"
     PROJECT_NAME: str = "TODOfast"
     
